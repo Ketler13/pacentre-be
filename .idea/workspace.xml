@@ -1,65 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="03b34c90-a736-4fbf-a4f3-39003ea56c7f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/scala-2.10/sbt-0.13/resolution-cache/default/scala-pacentre-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.properties" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.10/sbt-0.13/resolution-cache/default/scala-pacentre-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/scala-2.10/sbt-0.13/resolution-cache/default/scala-pacentre-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.10/sbt-0.13/resolution-cache/default/scala-pacentre-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-scala-pacentre-build-compile-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-scala-pacentre-build-compile-internal.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-scala-pacentre-build-compile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-scala-pacentre-build-compile.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-scala-pacentre-build-docs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-scala-pacentre-build-docs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-scala-pacentre-build-optional.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-scala-pacentre-build-optional.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-scala-pacentre-build-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-scala-pacentre-build-plugin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-scala-pacentre-build-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-scala-pacentre-build-pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-scala-pacentre-build-provided.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-scala-pacentre-build-provided.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-scala-pacentre-build-runtime-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-scala-pacentre-build-runtime-internal.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-scala-pacentre-build-runtime.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-scala-pacentre-build-runtime.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-scala-pacentre-build-scala-tool.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-scala-pacentre-build-scala-tool.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-scala-pacentre-build-sources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-scala-pacentre-build-sources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-scala-pacentre-build-test-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-scala-pacentre-build-test-internal.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-scala-pacentre-build-test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-scala-pacentre-build-test.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.10/output" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.10/output" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/howtographql/scala/sangria/DAO.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/howtographql/scala/sangria/DAO.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/howtographql/scala/sangria/DBSchema.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/howtographql/scala/sangria/DBSchema.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/howtographql/scala/sangria/GraphQLSchema.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/howtographql/scala/sangria/GraphQLSchema.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/howtographql/scala/sangria/Server.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/howtographql/scala/sangria/Server.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/howtographql/scala/sangria/models/package.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/howtographql/scala/sangria/models/package.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/howtographql/scala/sangria/DAO$$anonfun$$nestedInanonfun$getVotesByRelationIds$1$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/howtographql/scala/sangria/DAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/com/howtographql/scala/sangria/DAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/howtographql/scala/sangria/DBSchema$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/com/howtographql/scala/sangria/DBSchema$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/howtographql/scala/sangria/DBSchema$LinksTable$$anon$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/howtographql/scala/sangria/DBSchema$LinksTable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/howtographql/scala/sangria/DBSchema$VotesTable$$anon$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/howtographql/scala/sangria/DBSchema$VotesTable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/howtographql/scala/sangria/DBSchema.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/com/howtographql/scala/sangria/DBSchema.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/howtographql/scala/sangria/GraphQLSchema$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/com/howtographql/scala/sangria/GraphQLSchema$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/howtographql/scala/sangria/GraphQLSchema.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/com/howtographql/scala/sangria/GraphQLSchema.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/howtographql/scala/sangria/Server$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/com/howtographql/scala/sangria/Server$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/howtographql/scala/sangria/models/package$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/com/howtographql/scala/sangria/models/package$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/howtographql/scala/sangria/models/package$AuthProviderEmail$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/com/howtographql/scala/sangria/models/package$AuthProviderEmail$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/howtographql/scala/sangria/models/package$AuthProviderEmail.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/com/howtographql/scala/sangria/models/package$AuthProviderEmail.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/howtographql/scala/sangria/models/package$AuthProviderSignupData$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/com/howtographql/scala/sangria/models/package$AuthProviderSignupData$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/howtographql/scala/sangria/models/package$AuthProviderSignupData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/com/howtographql/scala/sangria/models/package$AuthProviderSignupData.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/howtographql/scala/sangria/models/package$AuthenticationException$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/com/howtographql/scala/sangria/models/package$AuthenticationException$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/howtographql/scala/sangria/models/package$AuthenticationException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/com/howtographql/scala/sangria/models/package$AuthenticationException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/howtographql/scala/sangria/models/package$AuthorizationException$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/com/howtographql/scala/sangria/models/package$AuthorizationException$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/howtographql/scala/sangria/models/package$AuthorizationException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/com/howtographql/scala/sangria/models/package$AuthorizationException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/howtographql/scala/sangria/models/package$Authorized$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/com/howtographql/scala/sangria/models/package$Authorized$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/howtographql/scala/sangria/models/package$DateTimeCoerceViolation$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/com/howtographql/scala/sangria/models/package$DateTimeCoerceViolation$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/howtographql/scala/sangria/models/package$Link$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/howtographql/scala/sangria/models/package$Link.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/howtographql/scala/sangria/models/package$User$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/com/howtographql/scala/sangria/models/package$User$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/howtographql/scala/sangria/models/package$User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/com/howtographql/scala/sangria/models/package$User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/howtographql/scala/sangria/models/package$Vote$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/howtographql/scala/sangria/models/package$Vote.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/howtographql/scala/sangria/models/package.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/com/howtographql/scala/sangria/models/package.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.12/output_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.12/output_dsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.12" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.12" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/run/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/run/$global/streams/out" afterDir="false" />
-    </list>
+    <list default="true" id="03b34c90-a736-4fbf-a4f3-39003ea56c7f" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/project/project/target/" />
     <ignored path="$PROJECT_DIR$/project/target/" />
@@ -78,7 +20,7 @@
     <session id="-1517409859">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="6" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.8" value="3" />
           <entry key="project.open.time.9" value="2" />
@@ -410,7 +352,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="Capture Tool" order="1" />

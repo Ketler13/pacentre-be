@@ -33,3 +33,5 @@
 [0m[[0mdebug[0m] [0mWaiting for thread run-main-0 to terminate.[0m
 [0m[[0mdebug[0m] [0m	Thread run-main-0 exited.[0m
 [0m[[0mdebug[0m] [0mWaiting for thread graphql-server-scheduler-1 to terminate.[0m
+[0m[[0mdebug[0m] [0m	Thread graphql-server-scheduler-1 exited.[0m
+[0m[[0mdebug[0m] [0mWaiting for thread graphql-server-akka.io.pinned-dispatcher-6 to terminate.[0m
