@@ -40,55 +40,55 @@ object GraphQLSchema {
     )
   )
 
-  lazy val LinkType: ObjectType[Unit, Link] = deriveObjectType[Unit, Link](
+  lazy val SuitType: ObjectType[Unit, Suit] = deriveObjectType[Unit, Suit](
     Interfaces(IdentifiableType),
     ReplaceField("createdAt", Field("createdAt", GraphQLDateTime, resolve = _.value.createdAt)),
-    ReplaceField("postedBy",
-      Field("postedBy", UserType, resolve = c => usersFetcher.defer(c.value.postedBy))
+    ReplaceField("createdBy",
+      Field("createdBy", UserType, resolve = c => usersFetcher.defer(c.value.createdBy))
     ),
     AddFields(
-      Field("votes", ListType(VoteType), resolve = c => votesFetcher.deferRelSeq(voteByLinkRel, c.value.id))
+      Field("fellas", ListType(FellaType), resolve = c => fellasFetcher.deferRelSeq(fellaBySuitRel, c.value.id))
     )
   )
 
   lazy val UserType: ObjectType[Unit, User] = deriveObjectType[Unit, User](
     Interfaces(IdentifiableType),
     AddFields(
-      Field("links", ListType(LinkType),
-        resolve = c =>  linksFetcher.deferRelSeq(linkByUserRel, c.value.id)),
-      Field("votes", ListType(VoteType),
-        resolve = c =>  votesFetcher.deferRelSeq(voteByUserRel, c.value.id))
+      Field("suits", ListType(SuitType),
+        resolve = c =>  suitsFetcher.deferRelSeq(suitByUserRel, c.value.id)),
+      Field("fellas", ListType(FellaType),
+        resolve = c =>  fellasFetcher.deferRelSeq(fellaByUserRel, c.value.id))
 
     )
   )
 
-  lazy val VoteType: ObjectType[Unit, Vote] = deriveObjectType[Unit, Vote](
+  lazy val FellaType: ObjectType[Unit, Fella] = deriveObjectType[Unit, Fella](
     Interfaces(IdentifiableType),
-    ExcludeFields("userId", "linkId"),
-    AddFields(Field("user",  UserType, resolve = c => usersFetcher.defer(c.value.userId))),
-    AddFields(Field("link",  LinkType, resolve = c => linksFetcher.defer(c.value.linkId)))
+    ExcludeFields("addedBy", "suitId"),
+    AddFields(Field("user",  UserType, resolve = c => usersFetcher.defer(c.value.addedBy))),
+    AddFields(Field("suit",  SuitType, resolve = c => suitsFetcher.defer(c.value.suitId)))
   )
 
 
-  val linkByUserRel = Relation[Link, Int]("byUser", l => Seq(l.postedBy))
-  val voteByLinkRel = Relation[Vote, Int]("byLink", v => Seq(v.linkId))
-  val voteByUserRel = Relation[Vote, Int]("byUser", v => Seq(v.userId))
+  val suitByUserRel = Relation[Suit, Int]("byUser", s => Seq(s.createdBy))
+  val fellaBySuitRel = Relation[Fella, Int]("bySuit", f => Seq(f.suitId))
+  val fellaByUserRel = Relation[Fella, Int]("byUser", f => Seq(f.addedBy))
 
-  val linksFetcher = Fetcher.rel(
-    (ctx: MyContext, ids: Seq[Int]) => ctx.dao.getLinks(ids),
-    (ctx: MyContext, ids: RelationIds[Link]) => ctx.dao.getLinksByUserIds(ids(linkByUserRel))
+  val suitsFetcher = Fetcher.rel(
+    (ctx: MyContext, ids: Seq[Int]) => ctx.dao.getSuits(ids),
+    (ctx: MyContext, ids: RelationIds[Suit]) => ctx.dao.getSuitsByUsersIds(ids(suitByUserRel))
   )
 
   val usersFetcher = Fetcher(
     (ctx: MyContext, ids: Seq[Int]) => ctx.dao.getUsers(ids)
   )
 
-  val votesFetcher = Fetcher.rel(
-    (ctx: MyContext, ids: Seq[Int]) => ctx.dao.getVotes(ids),
-    (ctx: MyContext, ids: RelationIds[Vote]) => ctx.dao.getVotesByRelationIds(ids)
+  val fellasFetcher = Fetcher.rel(
+    (ctx: MyContext, ids: Seq[Int]) => ctx.dao.getFellas(ids),
+    (ctx: MyContext, ids: RelationIds[Fella]) => ctx.dao.getFellasByRelationIds(ids)
   )
 
-  val Resolver = DeferredResolver.fetchers(linksFetcher, usersFetcher, votesFetcher)
+  val Resolver = DeferredResolver.fetchers(suitsFetcher, usersFetcher, fellasFetcher)
 
 
   val Id = Argument("id", IntType)
@@ -97,39 +97,47 @@ object GraphQLSchema {
   val QueryType = ObjectType(
     "Query",
     fields[MyContext, Unit](
-      Field("allLinks", ListType(LinkType), resolve = c => c.ctx.dao.allLinks),
-      Field("link",
-        OptionType(LinkType),
+      Field("allSuits", ListType(SuitType), resolve = c => c.ctx.dao.allSuits),
+      Field("suit",
+        OptionType(SuitType),
         arguments = Id :: Nil,
-        resolve = c => linksFetcher.deferOpt(c.arg(Id))
+        resolve = c => suitsFetcher.deferOpt(c.arg(Id))
       ),
-      Field("links",
-        ListType(LinkType),
+      Field("suits",
+        ListType(SuitType),
         arguments = Ids :: Nil,
-        resolve = c => linksFetcher.deferSeq(c.arg(Ids))
+        resolve = c => suitsFetcher.deferSeq(c.arg(Ids))
       ),
+      Field("allUsers", ListType(UserType), resolve = c => c.ctx.dao.allUsers),
       Field("users",
         ListType(UserType),
         arguments = List(Ids),
         resolve = c => usersFetcher.deferSeq(c.arg(Ids))
       ),
-      Field("votes",
-        ListType(VoteType),
+      Field("allFellas", ListType(FellaType), resolve = c => c.ctx.dao.allFellas),
+      Field("fellas",
+        ListType(FellaType),
         arguments = List(Ids),
-        resolve = c => votesFetcher.deferSeq(c.arg(Ids))
+        resolve = c => fellasFetcher.deferSeq(c.arg(Ids))
       )
     )
   )
 
   val NameArg = Argument("name", StringType)
+  val SurnameArg = Argument("surname", StringType)
   val AuthProviderArg = Argument("authProvider", AuthProviderSignupDataInputType)
-  val UrlArg = Argument("url", StringType)
+  val TitleArg = Argument("title", StringType)
   val DescArg = Argument("description", StringType)
-  val PostedByArg = Argument("postedById", IntType)
-  val LinkIdArg = Argument("linkId", IntType)
+  val CreatedByArg = Argument("createdBy", IntType)
+  val AddedByArg = Argument("addedBy", IntType)
+  val SuitIdArg = Argument("suitId", IntType)
   val UserIdArg = Argument("userId", IntType)
   val EmailArg = Argument("email", StringType)
   val PasswordArg = Argument("password", StringType)
+  val NickArg = Argument("nick", StringType)
+  val CarArg = Argument("car", StringType)
+  val RegionArg = Argument("region", StringType)
+  val MusicArg = Argument("music", StringType)
 
   val Mutation = ObjectType(
     "Mutation",
@@ -141,17 +149,26 @@ object GraphQLSchema {
         resolve = c => c.ctx.dao.createUser(c.arg(NameArg), c.arg(AuthProviderArg))
       ),
       Field(
-        "createLink",
-        LinkType,
-        arguments = UrlArg :: DescArg :: PostedByArg :: Nil,
+        "createSuit",
+        SuitType,
+        arguments = TitleArg :: DescArg :: CreatedByArg :: Nil,
         tags = Authorized :: Nil,
-        resolve = c => c.ctx.dao.createLink(c.arg(UrlArg), c.arg(DescArg), c.arg(PostedByArg))
+        resolve = c => c.ctx.dao.createSuit(c.arg(TitleArg), c.arg(DescArg), c.arg(CreatedByArg))
       ),
       Field(
-        "createVote",
-        VoteType,
-        arguments = LinkIdArg :: UserIdArg :: Nil,
-        resolve = c => c.ctx.dao.createVote(c.arg(LinkIdArg), c.arg(UserIdArg))
+        "createFella",
+        FellaType,
+        arguments = NameArg :: SurnameArg :: NickArg :: CarArg :: RegionArg :: MusicArg :: AddedByArg :: SuitIdArg :: Nil,
+        resolve = c => c.ctx.dao.createFella(
+          c.arg(NameArg),
+          c.arg(SurnameArg),
+          c.arg(NickArg),
+          c.arg(CarArg),
+          c.arg(RegionArg),
+          c.arg(MusicArg),
+          c.arg(AddedByArg),
+          c.arg(SuitIdArg)
+        )
       ),
       Field(
         "login",

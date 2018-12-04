@@ -6127,7 +6127,7 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#template-resolver;0.1!template-resolver.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#jline;2.10.6!jline.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 480ms :: artifacts dl 11ms[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 606ms :: artifacts dl 16ms[0m
 [0m[[0mdebug[0m] [0m	report for default#scala-pacentre-build;0.1-SNAPSHOT compile produced in /home/user/www/scala-pacentre/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-scala-pacentre-build-compile.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#scala-pacentre-build;0.1-SNAPSHOT runtime produced in /home/user/www/scala-pacentre/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-scala-pacentre-build-runtime.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#scala-pacentre-build;0.1-SNAPSHOT test produced in /home/user/www/scala-pacentre/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-scala-pacentre-build-test.xml[0m
@@ -6141,5 +6141,5 @@
 [0m[[0mdebug[0m] [0m	report for default#scala-pacentre-build;0.1-SNAPSHOT docs produced in /home/user/www/scala-pacentre/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-scala-pacentre-build-docs.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#scala-pacentre-build;0.1-SNAPSHOT pom produced in /home/user/www/scala-pacentre/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-scala-pacentre-build-pom.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#scala-pacentre-build;0.1-SNAPSHOT scala-tool produced in /home/user/www/scala-pacentre/project/target/scala-2.10/sbt-0.13/resolution-cache/reports/default-scala-pacentre-build-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (480ms resolve - 11ms download)[0m
+[0m[[0mdebug[0m] [0m	resolve done (606ms resolve - 16ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m

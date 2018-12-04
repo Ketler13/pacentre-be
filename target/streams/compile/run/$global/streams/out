@@ -32,9 +32,4 @@
 [0m[[0mdebug[0m] [0m	/home/user/.ivy2/cache/com.h2database/h2/jars/h2-1.4.196.jar[0m
 [0m[[0mdebug[0m] [0mWaiting for thread run-main-0 to terminate.[0m
 [0m[[0mdebug[0m] [0m	Thread run-main-0 exited.[0m
-[0m[[0mdebug[0m] [0mWaiting for thread graphql-server-akka.actor.default-dispatcher-2 to terminate.[0m
-[0m[[0mdebug[0m] [0m	Thread graphql-server-akka.actor.default-dispatcher-2 exited.[0m
 [0m[[0mdebug[0m] [0mWaiting for thread graphql-server-scheduler-1 to terminate.[0m
-[0m[[0mdebug[0m] [0m	Thread graphql-server-scheduler-1 exited.[0m
-[0m[[0mdebug[0m] [0mWaiting for thread graphql-server-akka.io.pinned-dispatcher-6 to terminate.[0m
-[0m[[0mdebug[0m] [0m	Thread graphql-server-akka.io.pinned-dispatcher-6 exited.[0m
